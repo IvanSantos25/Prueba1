@@ -1,0 +1,48 @@
+public class prueba {
+
+	public static void main(String[] args) {
+	
+		Scanner a=new Scanner(System.in);
+		
+		System.out.println("Introduzca el numeroA");
+		  int numeroA = a.nextInt(); 
+		
+		System.out.println("Introduzca el numeroB");
+		   int numeroB = a.nextInt();
+		 
+		System.out.println("Introduzca el numeroC");
+		   int numeroC = a.nextInt();
+		 //Operaciones colocando condicionales para el control de /0    
+		if (numeroC!=0) {
+		 System.out.println("primera operacion = "+numeroA*numeroB/numeroC);
+		}
+		else {
+		System.out.println(" !UPS¡No se puede dividir entre 0");
+		}
+		System.out.println("------------------");
+		if(numeroB!=0) {
+		 System.out.println("segunda operacion = "+(numeroA*numeroC)%numeroB);
+		}
+		else {
+		System.out.println("!UPS¡No se puede dividir entre 0");     
+		}
+		System.out.println("-----------------");
+	
+		if (numeroC*numeroB!=0) {
+		System.out.println( "Tercera operacion = "+2*(numeroA+numeroC-numeroB)/(numeroB*numeroC));
+		}
+		else {
+			System.out.println("!UPS¡ No se puede dividir entre 0");
+		}	
+			
+			System.out.println("-------------------");
+		
+		if (numeroA!=0) {
+			System.out.println("cuarta operacionn = "+((numeroA*numeroC)+(numeroB%numeroA)/numeroA-numeroC));
+		}
+		
+		else {
+			System.out.println("!UPS! No se puede dividir entre 0");
+		}
+   }
+}
